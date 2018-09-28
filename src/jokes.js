@@ -8,7 +8,7 @@ class Jokes {
         this._jokes = initialData;
     }
 
-    set addJoke(joke){
+    addJoke(joke){
         this._jokes.push(joke);
     }
 
