@@ -2,24 +2,66 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="fullpage.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <em>
-        This is meant as a quick intro to how we will create front-end code for the rest of the semester.<br/>
-        The ONLY HTML-file you should consider is index.htm (in the public folder) and ALL your javascript code should go into the source folder.<br/>
-        Use this small example as a template for this week. Next time we will focus on JavaScript, it will be with React, i a way "similar" this<br/>
-        Make sure all your JavaScript code is included in index.js, the "by magic" it will be included in the bundle.js file which is included by the index.html
-    </em>
-    <br/>
-    <br/>
-    <h2>Jokes</h2>
-    <p id="jokes"> </p>
-  </div>
-  <script src="bundle.js"></script>
+    <div class="container-fluid p-0">
+
+        <div id="fullpage">
+            <section class="find">
+                <div class="row">
+                    <h1 class="logo">Search people by their hobbies</h1>
+                </div>
+                <div class="row form">
+                    <div class="col-md-9">
+                        <input type="text" class="search" placeholder="Type in hobby or phone number" id="search">
+                    </div>
+                    <div class="col-md-3">
+                        <button class="button">Search</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="col-12 p-0">
+                    <h1 id="res_size" class="text-center m-0"></h1>
+                    <table class="table table-striped m-0"></table>
+                </div>
+            </section>
+
+            <section class="createSection">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12"><h1 class="text-center">Create a person</h1></div>
+                    <div class="col-12" id="createRes"></div> 
+                    <div class="col-6">
+                        <div class="form-row">
+                            <input type="text" class="form-control col-6" id="cFname" placeholder="Firstname">
+                            <input type="text" class="form-control col-6" id="cLname" placeholder="Lastname">
+                            <input type="email" class="form-control col-12" id="cEmail" placeholder="E-mail">
+                            <input type="text" class="form-control col-6" id="cPhone" placeholder="Phonenumber">
+                            <input type="text" class="form-control col-6" id="cPhoneDesc" placeholder="Phone type">
+                            <input type="text" class="form-control col-6" id="cStreet" placeholder="Street">
+                            <input type="text" class="form-control col-6" id="cStreetInfo" placeholder="Streetinfo">
+                            <input type="text" class="form-control col-4" id="cZip" placeholder="Zipcode">
+                            <input type="text" class="form-control col-8" id="cCity" placeholder="City">
+                            <input type="text" class="form-control col-4" id="cHobby" placeholder="Hobby">
+                            <input type="text" class="form-control col-8" id="cHobbyDesc" placeholder="Hobby description">
+                            <button class="btn btn-danger col-12" id="createBtn">Create</button>
+                        </div>
+                    </div>
+
+                     
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src=""></script>
+    <script src=""></script>
 </body>
 
 </html>
